@@ -39,7 +39,7 @@ docker-compose -f ./localstack/docker-compose.yml down -v
 docker-compose -f ./exercise_container/docker-compose.yml up -d
 ```
 
-## コンテナに入る
+### コンテナに入る
 
 ```bash
 docker exec -it exercise /bin/bash
