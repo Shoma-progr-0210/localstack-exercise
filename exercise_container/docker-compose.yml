@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  exercise:
+    container_name: exercise
+    image: amazon/aws-cli:latest
+    command: /bin/bash
+    entrypoint: ""
+    working_dir: /exercise
+    tty: true
+    volumes:
+      - ./appendix:/exercise/appendix
+      - ./tmp:/tmp/exercise
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    environment:
+      - ENDPOINT_URL=http://host.docker.internal:4566
