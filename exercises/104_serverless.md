@@ -1,5 +1,9 @@
 # 104 Serverless Architecture
 
+## 構成図
+
+![serverless](./images/serverless.drawio.png)
+
 ## 事前準備
 
 |環境変数名|説明|
